@@ -1,4 +1,8 @@
+import { useState } from "react"
+import AccordionList from "./Accordition"
+
 export default function Main() {
+
     return (
         <main>
             <div className="container m-5 p-5">
@@ -15,6 +19,9 @@ export default function Main() {
                         <button className="btn btn-primary m-3 p-3">React</button>
                     </div>
                 </div>
+            </div>
+            <div className="container">
+                <AccordionList></AccordionList>
             </div>
         </main>
     )
