@@ -14,7 +14,7 @@ return (
 
                         <AccordionList />                        
 
-                    </div>
+                    </div>                   
                 </div>
             </div>
         </main>
