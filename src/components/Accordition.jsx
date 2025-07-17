@@ -35,15 +35,23 @@ function handleClick(index){
     setOpen(index)
 }
     return(
-        <div id="accordition" className="bg-white text-dark">
+        <div id="accordition" className="container bg-white ">
+            <div className="row row-cols-2 row-cols-lg-6 g-2 g-lg-3">
+
             {data.map((item, index)=> {
                 return(
                     <div className="accordion-item">
-                        <button onClick={()=> handleClick(index)}>{item.language}</button>
+                        <button className="btn btn-primary" onClick={()=> handleClick(index)}>{item.language}</button>
+                        <div>
+                            
                         { open === index && <p>{item.info}</p>}
+
+                        </div>
                     </div>
                 )
             })}
+
+            </div>
         </div>
     )
 }
